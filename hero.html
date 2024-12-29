@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+        SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+        FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html{
+        font-family: "Ruik", sans-serif;
+        color: #444;
+      }
+  
+      .hero-section{
+        height: 100vh;
+        padding: 0 10%;
+        display: grid;
+        grid-template-rows: 10% 1fr;
+
+        color: white;
+
+        background-image: linear-gradient(rgba(34,34,34,0.6), rgba(34,34,34,0.6)), url(hero.jpg);
+        background-size: cover;
+      }
+
+      .hero-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -10;
+      }
+
+      nav{
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        text-transform: uppercase;
+      }
+
+      .main-content{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+      }
+
+      h1{
+        font-size: 52px;
+        word-spacing: -2px;
+      }
+
+      p{
+        line-height: 1.5;
+      }
+
+      .btn:link,
+      .btn:visited{
+        text-decoration: none;
+        color: white;
+
+        align-self: flex-start;
+
+        font-size: 18px;
+        font-weight: 700;
+        background-color: #e67e22;
+        padding: 16px 32px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero-section">
+      <!-- <img src="hero.jpg" alt="hero-img" class="hero-img"> -->
+      <nav>
+        <div>Logo</div>
+        <div>Navigation</div>
+      </nav>
+      <div class="main-content">
+        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit</h1>
+        <p>
+          Quis, ullam iusto modi velit natus iste eum corporis, nemo eligendi
+          reiciendis at magni minus commodi consectetur illo rem, in fugiat cum.
+        </p>
+        <a href="#" class="btn">Start eating well</a>
+      </div>
+    </header>
+    <section>
+      <h2>Lorem, ipsum dolor.</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quis
+        nobis molestiae, blanditiis harum praesentium possimus vel porro illo
+        similique magni doloremque mollitia qui? Dicta beatae minima quas aut
+        voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Praesentium inventore voluptatibus placeat id consequatur quod, ab iusto
+        nam ad vel repellat consequuntur laborum voluptatem neque deleniti fuga
+        fugiat quidem maiores.
+      </p>
+    </section>
+  </body>
+</html>
